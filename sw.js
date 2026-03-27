@@ -1,16 +1,16 @@
-const CACHE_NAME = 'flota-mvp-v1';
-const OFFLINE_URL = '/offline.html';
+const CACHE_NAME = 'flota-mvp-v2';
+const OFFLINE_URL = 'offline.html';
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll([
-        '/',
-        '/index.html',
-        '/offline.html',
-        '/manifest.json',
-        '/icons/icon-192.png',
-        '/icons/icon-512.png'
+        './',
+        './index.html',
+        './offline.html',
+        './manifest.json',
+        './icons/icon-192.png',
+        './icons/icon-512.png'
       ]);
     })
   );
