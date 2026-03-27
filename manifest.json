@@ -2,14 +2,14 @@
   "name": "Flota MVP",
   "short_name": "Flota MVP",
   "description": "Gestión de flotas de vehículos",
-  "start_url": "./",
+  "start_url": "/flotamvp/",
+  "scope": "/flotamvp/",
   "display": "standalone",
   "orientation": "any",
   "background_color": "#1565C0",
   "theme_color": "#1565C0",
   "dir": "ltr",
   "lang": "es",
-  "scope": "./",
   "icons": [
     {
       "src": "icons/icon-192.png",

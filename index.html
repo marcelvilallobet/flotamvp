@@ -48,19 +48,16 @@
     sandbox="allow-same-origin allow-scripts allow-popups allow-forms allow-modals allow-top-navigation"
   ></iframe>
   <script>
-    // Register service worker
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('./sw.js').then(() => {
+      navigator.serviceWorker.register('/flotamvp/sw.js').then(() => {
         console.log('Service Worker registered');
       });
     }
-    // Hide loading screen when iframe loads
     document.getElementById('appframe').addEventListener('load', () => {
       const loading = document.getElementById('loading');
       loading.style.opacity = '0';
       setTimeout(() => loading.style.display = 'none', 500);
     });
-    // Fallback: hide loading after 5 seconds
     setTimeout(() => {
       const loading = document.getElementById('loading');
       if (loading.style.display !== 'none') {
