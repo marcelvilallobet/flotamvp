@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir \"C:\\\\Users\\\\Marcel\\\\OneDrive - Universitat Ramón Llull\\\\Escritorio\\\\Objective x10\\\\automations\\\\4.Organización\\\\old\\\\flota app v3 intent\")",
+      "Bash(python -c \"from PIL import Image; print\\('PIL ok'\\)\")",
+      "Bash(pip install:*)",
+      "Bash(python generate_icons.py)"
+    ]
+  }
+}
